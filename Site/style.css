@@ -42,7 +42,7 @@
     display: inline;
     padding: 0 15px;
     text-decoration: none;
-    color: #FFF;
+    color: #166b0f;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -81,8 +81,8 @@
 
 .historia{
     width: 100%;
-    height: 550px;
-    background-color: #1E1E1E;
+    height: 600px;
+    background-color: #14460f;
 }
 
 .titulo_historia{
@@ -107,14 +107,127 @@
 
 .direcaotexto{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 10%;
 }
 
 .texto_historia{
-    margin-left: 30px;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
     font-family: Hanalei Fill;
-    margin-top: -30px;
+    margin-bottom: 3%;
     color: #ECD614;
+    margin-right: -5%;
+}
+/*Carrosel*/
+.slider{
+    margin-right: 7%;
+    width: 750px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+      width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 3px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: white;
+}
+
+/*quando radio estiver checked movimente a margin left nesse valor*/
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .first{
+    margin-left: -100%;
+}
+
+.navigation-auto div{
+    border: 3px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: white;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: white;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: white;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background-color: white;
 }
