@@ -9,35 +9,88 @@
 </head>
 
 <body>
+<div class="telaprincipal">
+    <!--Menu Lateral-->
+    <div class="containermenu ">
+        <div class=" btn">
+           <img class="arrow" src="imagens/menu (1).png" alt="">
+           <div class="txt" style="padding-left: 40px;">Menu</div> 
+        </div>
+        
+        <div class="menu">
+           
+            <img class="icon" style="width: 30px;" src="imagens/imagens_menu/one.png" alt="primeiro">
+            
+                <div class="txt"> Campeão - 1958</div>
+       
+        </div>
+            
+        <div class="menu">
+            <img class="icon" src="imagens/imagens_menu/two.png" alt="segundo">
+            
+            <div class="txt"> Bicampeão - 1962</div> 
+        
+        </div>
+
+        <div class="menu">
+            <img class="icon" src="imagens/imagens_menu/three.png" alt="terceiro">
+            
+            <div class="txt">Tricampeão - 1970</div>
+        
+        </div>    
+
+        <div class="menu">
+            <img class="icon" src="imagens/imagens_menu/four.png" alt="quarto">
+            
+            <div class="txt">Tetracampeão - 1994</div>
+        
+        </div>  
+
+        <div class="menu">
+            <img class="icon" src="imagens/imagens_menu/five.png" alt="quinto">
+            
+            <div class="txt">Pentacampeão - 2002</div>
+        
+        </div>  
+        
+    </div>
+    
+    
+    
     <!--Header-->
-    <div class="header">
-        <div class="conteiner">
+        <div class="header">
+            <div class="conteiner">
 
-            <img src="imagens/menu (1).png" alt="menu" class="menu">
-            <img src="imagens/seleção_logo.png" alt="logo" class="imglogo">
+                <h1 class="primeiro_titulo">BRASIL</h1>
+                <img src="imagens/seleção_logo.png" alt="logo" class="imglogo">
 
-            <ul class="navbar">
-                <li>
-                    <p>Login</p>
-                </li>
-                <li>
-                    <p>Cadastra-se</p>
-                </li>
-                <li>
-                    <p style="color: #0B3B98;">História</p>
-                </li>
-            </ul>
+                <ul class="navbar">
+                    <li>
+                        <p>Login</p>
+                    </li>
+                    <li>
+                        <p>Cadastra-se</p>
+                    </li>
+                    <li>
+                         <p style="color: #0b8800;"> História</p>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
+    
 
-    <!--Banner-->
-    <div class="banner">
+            <!--Banner-->
+            <div class="banner">
 
-        <div class="ajustetexto">
-            <p class="textopagina"> A MAIOR <br> SELEÇÃO <br> DO MUNDO</p>
-        </div>
-    </div>
+                <div class="ajustetexto">
+                    <p class="textopagina"> A MAIOR <br> SELEÇÃO <br> DO MUNDO</p>
+                </div>
+            </div>
 
+        
+</div>
+    
+    
 
     <!--Historia-->
     <div class="historia">
@@ -118,6 +171,22 @@
 
 </html>
 <script>
+    
+    /*Menu*/
+    
+    var arrow = document.querySelector(".arrow");
+    var container = document.querySelector('.containermenu');
+    var oculto  = document.querySelector('.oculto');
+
+    arrow.onclick = e =>{
+        if(!container.classList.contains('oculto')){
+            container.classList.add('oculto');
+        }else{
+            container.classList.remove('oculto');
+        }
+    }
+    
+    /*Carrossel*/
     let count = 1;
     document.getElementById("radio1").checked = true;
 
