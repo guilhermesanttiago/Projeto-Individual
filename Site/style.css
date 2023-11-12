@@ -115,6 +115,7 @@
     color: #ECD614;
     text-shadow: black 0.1em 0.1em 0.0em;
     margin-left: 20px;
+    text-decoration: none;
 }
 
 .imglogo{
@@ -127,16 +128,13 @@
     list-style: none;
 }
 
-.header .conteiner .navbar li p{
+.header .conteiner .navbar li a{
     display: inline;
     padding: 0 15px;
-    text-decoration: none;
     color: #ECD614;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal
+    text-decoration: none;
 }
 
 /*Banner*/
@@ -206,6 +204,8 @@
     color: #ECD614;
     margin-right: -5%;
 }
+
+
 /*Carrosel*/
 .slider{
     margin-right: 7%;
@@ -316,4 +316,130 @@
 
 #radio5:checked ~ .navigation-auto .auto-btn5{
     background-color: white;
+}
+
+/*Login*/
+.header_login{
+    background-color: #0B3B98;
+    width: 100%;
+    height: 70px;
+}
+
+.header_login .conteiner_login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.primeiro_titulo_login{
+    font-size: 48px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ECD614;
+    text-shadow: black 0.1em 0.1em 0.0em;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.direcao_logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-left: 135px;
+}
+
+.imglogo_login{
+    width: 68px;
+}
+
+.header_login .conteiner_login .navbar_login{
+    display: flex;
+    list-style: none;
+}
+
+.header_login .conteiner_login .navbar_login li p{
+    display: inline;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #ECD614;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal
+}
+
+.banner_login{
+    width: 100%;
+    height: 669px;
+    background-image: url(imagens/cadastro_login.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadro_login{  
+    height: 400px;
+    width: 350px;
+    border-radius: 50px;
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.login_titulo{
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #0B3B98;
+}
+
+.login{
+    display: flex;
+    height: 90%;
+    width: 80%;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campos{
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 5px solid #000;
+}
+
+.categoria_campos{
+    font-size: 23px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #10520A;
+}
+
+.button_login{
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #10520A;
+    background-color: #ECD614;
+    width: 120px;
+    height: 30px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.button_login:hover{
+    background-color: #ffffff;
+    transition: 2s;
 }
