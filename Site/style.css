@@ -869,7 +869,7 @@
 .titulo_historia_1970{
     display: flex;
     justify-content: center;
-    padding: 40px;
+    padding: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 50px;
     color: #ECD614;
@@ -889,7 +889,6 @@
 .texto_historia_1970{
     font-size: 17px;
     font-family: hanalei fill;
-    margin-bottom: 3%;
     color: #ECD614;
     margin-right: -5%;
 }
