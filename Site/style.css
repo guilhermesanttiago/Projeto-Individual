@@ -285,6 +285,7 @@
     margin-left: -100%;
 }
 
+
 .navigation-auto div{
     border: 3px solid #20a6ff;
     padding: 5px;
@@ -1070,4 +1071,68 @@
     
     color: #ECD614;
     margin-right: -5%;
+}
+
+/*Header Estatística*/
+.header_estatisticas{
+    background-color: #0B3B98;
+    width: 100%;
+    height: 70px;
+}
+
+.header_estatisticas .container_estatisticas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.primeiro_titulo_estatisticas{
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ECD614;
+    text-shadow: black 0.1em 0.1em 0.0em;
+    
+    text-decoration: none;
+}
+
+.direcao_estatisticas{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-left: 135px;
+}
+
+.imglogo_estatisticas{
+    width: 68px;
+    margin-right: 60px;
+}
+
+.header_estatisticas .container_estatisticas .navbar_estatisticas{
+    display: flex;
+    list-style: none;
+}
+
+.header_estatisticas .container_estatisticas .navbar_estatisticas li a{
+    display: inline;
+    padding: 0 15px;
+    text-decoration: none;
+    color: #ECD614;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+
+/*tela estatistica*/
+.tela_estatistica{
+    width: 100%;
+    height: 800px;
+    background-color: #ECD614;
+}
+
+
+
+.segundo_titulo{
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #10520A;
 }
