@@ -1136,17 +1136,17 @@
 
 .titulo_grafico{
     display: flex;
-    font-size: 40px;
+    font-size: 35px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #10520A;
     margin-top: 10px;
-    margin-right: 90px;
+    margin-right: 140px;
     
 }
 
 .titulo_artilheiros{
     display: flex;
-    font-size: 40px;
+    font-size: 35px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #10520A;
     padding: 10px;
@@ -1154,8 +1154,14 @@
     
 }
 
-.artilheiros{
+.direcao_pagina{
+    display: flex; 
+    justify-content: space-around; 
     width: 100%;
+}
+
+.artilheiros{
+    width: 50%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -1163,7 +1169,7 @@
 }
 
 .artilheiro_01{
-    width: 50%;
+    width: 80%;
     display: flex;
     
     text-align: center;
@@ -1176,13 +1182,13 @@
 
 .txt_artilheiro1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-    padding: 40px;
+    font-size: 30px;
+    padding-top: 40px;
     text-align: right;
 }
 
 .artilheiro_02{
-    width: 100%;
+    width: 80%;
     display: flex;
     text-align: center;
 }
@@ -1194,13 +1200,14 @@
 
 .txt_artilheiro2{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-    padding: 40px;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-left: 10px;
     text-align: right;
 }
 
 .artilheiro_03{
-    width: 100%;
+    width: 80%;
     display: flex;
     text-align: center;
 }
@@ -1212,12 +1219,13 @@
 
 .txt_artilheiro3{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-    padding: 40px;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-left: 5px;
     text-align: right;
 }
 .artilheiro_04{
-    width: 100%;
+    width: 80%;
     display: flex;
     text-align: center;
 }
@@ -1229,13 +1237,14 @@
 
 .txt_artilheiro4{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-    padding: 40px;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-left: 10px;
     text-align: right;
 }
 
 .artilheiro_05{
-    width: 100%;
+    width: 80%;
     display: flex;
     text-align: center;
 }
@@ -1247,12 +1256,30 @@
 
 .txt_artilheiro5{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 20px;
-    padding: 40px;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-left: 15px;
     text-align: right;
 }
 
-canvas{
+.chart-container{
     background-color: rgba(255, 255, 255, 0.694);
     border-radius: 20px;
+    margin-top: 10px;
 }
+
+.tiulo_graficopizza{
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #10520A;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+.direcao_grafico2{
+    display: flex; 
+    align-items: center; 
+    width: 40%; 
+    flex-direction: column;
+}
+

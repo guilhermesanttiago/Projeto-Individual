@@ -41,7 +41,7 @@
 
         </div>
 
-        <div class="direcao_pagina" style="display: flex; justify-content: space-around; width: 100%;" >
+        <div class="direcao_pagina">
             <div class="artilheiros">
 
                 <div class="artilheiro_01">
@@ -69,17 +69,50 @@
                     <p class="txt_artilheiro5"> Zico - 48 Gols</p>
                 </div>
             </div>
-            
-            <div style="display: flex; justify-content: center; width: 70%;">
+
+            <div class="direcao_grafico2">
+
                 <div>
                     <canvas id="myChart2" class="chart-container" style=" height:200px; width:100%px"></canvas>
                 </div>
+
+
+                <div class="tiulo_graficopizza">
+                    APROVEITAMENTO EM FINAIS
+                </div>
+
+
+                <div>
+                    <canvas id="myChart" class="chart-container2"
+                        style="position: relative; height:150px; width:100%"></canvas>
+                </div>
             </div>
-            
+
+
+
         </div>
+
+    </div>
 
 </body>
 <script>
+    const labels = [
+        'Vitórias', 'Derrotas'
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: 'Temperatura',
+            borderColor: "black",
+            backgroundColor: "#10520A",
+            data: [28, 72],
+        },
+        ]
+    };
+
+
+
     const labels2 = [
         '1958',
         '1962',
@@ -91,12 +124,29 @@
     const data2 = {
         labels: labels2,
         datasets: [{
-            label: 'Gols', 
-						borderColor: "black",
-						backgroundColor: "#10520A",
-            data: [20-4, 30-16, 40-21, 50-39, 60-42, 70-52,30],
+            label: 'Gols',
+            borderColor: "black",
+            backgroundColor: "#10520A",
+            data: [20 - 4, 30 - 16, 40 - 21, 50 - 39, 60 - 42, 70 - 52, 30],
         },
-    ]
+        ]
+    };
+
+    const config = {
+        type: 'pie',
+        data: data,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: '7 finais e 5 vitórias'
+                }
+            }
+        },
     };
 
     const config2 = {
@@ -106,6 +156,11 @@
     };
 </script>
 <script>
+     const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+    
     const myChart2 = new Chart(
         document.getElementById('myChart2'),
         config2
