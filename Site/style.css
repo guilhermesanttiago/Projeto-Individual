@@ -1283,6 +1283,7 @@
     flex-direction: column;
 }
 
+/*Tela valores*/
 .valores{
     width: 100%;
     height: 750px;
@@ -1300,3 +1301,20 @@
     padding-top: 30px;
     color: #14460f;
 }
+
+.primeiro_card{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.segundo_card{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
